@@ -21,27 +21,36 @@ const Programas = () => {
                 
                 <CardHorizontal
                     imagen="https://picsum.photos/400/300"
-                    tag="Programa de Salud"
-                    titulo="Brigadas Médicas"
-                    descripcion="Atención médica gratuita en comunidades rurales con profesionales voluntarios."
-                    items={["Consultas médicas generales", "Exámenes de laboratorio clínico", "Apoyo farmacéutico"]} //si hay una lista poner items, sino no lo agregues
+                    tag="Atención médica"
+                    titulo="Clínica Santa María"
+                    descripcion="Área orientada a la consulta médica general, atención externa y apoyo a pacientes que requieren valoración y seguimiento de salud."
+                    items={["Consulta general","Atención a pacientes","Orientación básica en salud"]} //si hay una lista poner items, sino no lo agregues
                 />
 
                 <CardHorizontal
                     imagen="https://picsum.photos/400/300"
-                    tag="Programa Social"
-                    titulo="Apoyo Comunitario"
-                    descripcion="Brindamos asistencia a familias en situación de vulnerabilidad."
-                    items={["Distribución de alimentos", "Campañas de vacunación", "Capacitación en salud preventiva"]}
+                    tag="Diagnóstico clínico"
+                    titulo="Laboratorio Santa María"
+                    descripcion="Brinda apoyo por medio de análisis clínicos que permiten fortalecer el diagnóstico, control y seguimiento de los pacientes atendidos."
+                    items={["Pruebas de laboratorio","Apoyo al diagnóstico","Seguimiento clínico"]}
                     imagenDerecha //para que la imagen este en la derecha, si lo queres en izquierdas no lo pongas
                 />
 
                 <CardHorizontal
                     imagen="https://picsum.photos/400/300"
-                    tag="Programa Educativo"
-                    titulo="Formación en Salud"
-                    descripcion="Programas de educación para promover hábitos saludables en la comunidad."
-                    items={["Talleres de nutrición", "Charlas de prevención", "Material educativo"]}
+                    tag="Apoyo farmacéutico"
+                    titulo="Farmacia San Francisco de Asís"
+                    descripcion="Facilita la dispensación de medicamentos para apoyar el tratamiento de las personas que reciben atención en el proyecto."
+                    items={["Entrega de medicamentos","Apoyo al tratamiento","Atención a pacientes"]}
+                />
+
+                <CardHorizontal
+                    imagen="https://picsum.photos/400/300"
+                    tag="Servicio complementario"
+                    titulo="Farmacia Candelaria"
+                    descripcion="Fortalece el trabajo del proyecto al ampliar la capacidad de apoyo farmacéutico y atención orientada al bienestar comunitario."
+                    items={["Apoyo comunitario","Atención farmacéutica","Servicio complementario"]}
+                    imagenDerecha 
                 />
             </section>
 
@@ -53,10 +62,10 @@ const Programas = () => {
                         <p>Además de sus áreas principales, el proyecto también ha brindado apoyo en otros servicios enfocados en la salud integral.</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <CardSimple titulo="Misión" descripcion="Brindar atención en salud..." />
-                        <CardSimple titulo="Visión" descripcion="Ser una institución líder..." />
-                        <CardSimple titulo="Valores" descripcion="Compromiso, solidaridad..." />
-                        <CardSimple titulo="Objetivo" descripcion="Fortalecer la salud comunitaria..." />
+                        <CardSimple titulo="Pediatría" descripcion="Atención orientada al bienestar y seguimiento de la salud infantil." />
+                        <CardSimple titulo="Psicología" descripcion="Apoyo emocional y orientación para fortalecer la salud mental de la población." />
+                        <CardSimple titulo="Nutrición Clínica" descripcion="Orientación alimentaria y acompañamiento para mejorar hábitos y condiciones de salud" />
+                        <CardSimple titulo="Lactancia Materna" descripcion="Educación y acompañamiento para madres y familias en esta etapa importante." />
                     </div>
                 </div>
             </section>
