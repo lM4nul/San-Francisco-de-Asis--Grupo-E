@@ -1,1 +1,91 @@
 @import "tailwindcss";
+
+@layer components {
+
+    /* CARDS */
+    .card {
+        @apply bg-white border border-[#ebe6dc] rounded-[22px] overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-transform duration-300;
+    }
+
+    .card-body { 
+        @apply p-[22px];
+        
+        h3{
+            @apply text-[1.45rem] text-[#2b2b2b] mb-[10px] font-bold;
+        }
+    }
+    .card-header { @apply p-[22px]; }
+    .card-header-img { @apply w-full h-[235px] object-cover; }
+    .card-footer { @apply border-t border-[#ebe6dc] p-[22px]; }
+
+    /* HERO */
+    .hero {
+        @apply py-[65px] bg-gradient-to-br from-[#fffdf8] to-[#eef9fb];
+    }
+
+    .hero-contenido {
+        @apply max-w-[1180px] mx-auto w-[90%] flex flex-col gap-8 items-center lg:flex-row lg:justify-between lg:items-center;
+    }
+
+    .hero-texto {
+        @apply w-full lg:w-[48%];
+
+        h2 {
+            @apply text-[2.7rem] leading-[1.12] text-[#2b2b2b] mb-[18px] max-w-[580px];
+        }
+        p {
+            @apply text-[#666] text-[1.05rem] max-w-[560px] mb-[24px];
+        }
+    }
+
+    .hero-etiqueta {
+        @apply inline-block mb-3 text-[#e97b1e] font-bold text-[0.98rem] tracking-wide;
+    }
+
+    .hero-botones {
+        @apply flex flex-wrap gap-3;
+    }
+
+    .hero-imagen {
+        @apply w-full lg:w-[48%] bg-white rounded-[26px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.07)];
+
+        img {
+            @apply w-full h-[350px] object-cover;
+        }
+    }
+
+    /* BOTONES */
+    .boton {
+        @apply inline-block py-[13px] px-[22px] rounded-[14px] font-bold text-[0.98rem] transition-colors duration-300;
+    }
+
+    .boton-principal {
+        @apply bg-[#e97b1e] text-white hover:bg-[#d86e17];
+    }
+
+    .boton-secundario {
+        @apply bg-[#2b2b2b] text-white hover:bg-[#1f1f1f];
+    }
+
+    /* SECCIONES */
+    .seccion {
+        @apply py-[75px];
+    }
+
+    .fondo-suave {
+        @apply bg-[#f8f5ee];
+    }
+
+    .titulo-seccion {
+        @apply text-center mb-[36px];
+
+        h2 {
+            @apply text-[2.05rem] text-[#2b2b2b] mb-3;
+        }
+    }
+
+    /* TARJETAS NOTICIAS */
+    .tarjetas-noticias {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+    }
+}
