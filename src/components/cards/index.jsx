@@ -2,3 +2,5 @@ export { default as Card } from './Card';
 export { default as CardHeaderImg } from './CardHeaderImg';
 export { default as CardBody } from './CardBody';
 export { default as CardFooter } from './CardFooter';
+export { default as CardHorizontal } from './CardHorizontal';
+export { default as CardSimple } from './CardSimple';
