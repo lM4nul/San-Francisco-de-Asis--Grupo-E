@@ -4,3 +4,4 @@ export { default as CardBody } from './CardBody';
 export { default as CardFooter } from './CardFooter';
 export { default as CardHorizontal } from './CardHorizontal';
 export { default as CardSimple } from './CardSimple';
+export { default as PostCard } from './PostCard';
