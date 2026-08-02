@@ -60,22 +60,22 @@ const Donaciones = () => {
                 <CardSimple titulo="Medicamentos" descripcion="Permite apoyar a personas y familias que necesitan tratamiento y no siempre cuentan con recursos." />
             </div>
 
-            <section className="bg-[#fffdf8] py-[75px]">
-                <div className="mx-auto flex w-[90%] max-w-[1180px] flex-col items-start gap-[30px] md:flex-row md:justify-between">
-                    <div className="w-full md:w-[48%]">
-                        <span className="mb-3 inline-block font-bold uppercase tracking-[0.15em] text-[#e97b1e]">Aporte con propósito</span>
-                        <h2 className="mb-4 text-4xl font-bold leading-tight text-[#2b2b2b]">Tu donación suma esperanza y bienestar</h2>
-                        <p className="mb-4 leading-relaxed text-[#666666]">
+            <section className="bg-orange-50 py-20">
+                <div className="mx-auto grid w-11/12 max-w-6xl grid-cols-1 items-start gap-8 md:grid-cols-2">
+                    <div className="w-full">
+                        <span className="mb-3 inline-block font-bold uppercase tracking-widest text-orange-500">Aporte con propósito</span>
+                        <h2 className="mb-4 text-4xl font-bold leading-tight text-neutral-800">Tu donación suma esperanza y bienestar</h2>
+                        <p className="mb-4 leading-relaxed text-neutral-500">
                             Apoyar este proyecto es una manera de colaborar con una labor social que busca acercar servicios de salud dignos, accesibles y humanos a comunidades vulnerables.
                         </p>
-                        <p className="mb-6 leading-relaxed text-[#666666]">
+                        <p className="mb-6 leading-relaxed text-neutral-500">
                             Puedes realizar aportes económicos, apoyo en especie o manifestar tu interés para recibir información sobre futuras campañas de ayuda.
                         </p>
 
-                        <div className="space-y-3 font-bold text-[#2b2b2b]">
-                            <p className="flex items-center gap-3"><span className="text-[#67c9cf]">✔</span> Apoyo a servicios médicos</p>
-                            <p className="flex items-center gap-3"><span className="text-[#67c9cf]">✔</span> Fortalecimiento del laboratorio</p>
-                            <p className="flex items-center gap-3"><span className="text-[#67c9cf]">✔</span> Medicamentos y atención comunitaria</p>
+                        <div className="space-y-3 font-bold text-neutral-800">
+                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Apoyo a servicios médicos</p>
+                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Fortalecimiento del laboratorio</p>
+                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Medicamentos y atención comunitaria</p>
                         </div>
                     </div>
 
@@ -84,7 +84,7 @@ const Donaciones = () => {
                         titulo="Formulario de donación"
                         textoBoton="Enviar información"
                         campos={camposDonacion}
-                        className="w-full md:w-[48%]"
+                        className="w-full"
                     />
                 </div>
             </section>

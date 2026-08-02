@@ -1,4 +1,5 @@
 import { CardSimple } from '../components/cards'
+import HeroPanel from "../components/hero-panel/heropanel";
 import Formulario from '../components/formulario/Formulario'
 
 const camposContacto = [
@@ -37,16 +38,23 @@ const camposContacto = [
 const Contacto = () => {
     return (
         <>
-            <section className="bg-[#fffdf8] py-[75px]">
-                <div className="mx-auto flex w-[90%] max-w-[1180px] flex-col items-start gap-[30px] md:flex-row md:justify-between">
-                    <div className="w-full md:w-[48%]">
-                        <span className="mb-3 inline-block font-bold uppercase tracking-[0.15em] text-[#e97b1e]">Información de contacto</span>
-                        <h2 className="mb-4 text-4xl font-bold leading-tight text-[#2b2b2b]">Será un gusto atenderte</h2>
-                        <p className="mb-6 leading-relaxed text-[#666666]">
+            <HeroPanel
+                evento="Estamos para ayudarte"
+                imagen="https://picsum.photos/1200/400"
+                titulo="Contáctanos"
+                descripcion="Si deseas comunicarte con el proyecto, pedir información o conocer más sobre nuestros servicios y actividades, puedes escribirnos por medio de este formulario."
+            />
+
+            <section className="bg-orange-50 py-20">
+                <div className="mx-auto grid w-11/12 max-w-6xl grid-cols-1 items-start gap-8 md:grid-cols-2">
+                    <div className="w-full">
+                        <span className="mb-3 inline-block font-bold uppercase tracking-widest text-orange-500">Información de contacto</span>
+                        <h2 className="mb-4 text-4xl font-bold leading-tight text-neutral-800">Será un gusto atenderte</h2>
+                        <p className="mb-6 leading-relaxed text-neutral-500">
                             Puedes utilizar este espacio para comunicarte con el proyecto por los medios oficiales de contacto y recibir orientación o respuesta a tus consultas.
                         </p>
 
-                        <div className="grid grid-cols-1 gap-[18px] sm:grid-cols-2">
+                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <CardSimple titulo="Ubicación" descripcion="Reitoca, Francisco Morazán, Honduras" />
                             <CardSimple titulo="Correo electrónico" descripcion="proyecto@sanfrancisco.org" />
                             <CardSimple titulo="Teléfono" descripcion="+504 0000-0000" />
@@ -59,7 +67,7 @@ const Contacto = () => {
                         titulo="Formulario de contacto"
                         textoBoton="Enviar mensaje"
                         campos={camposContacto}
-                        className="w-full md:w-[48%]"
+                        className="w-full"
                     />
                 </div>
             </section>

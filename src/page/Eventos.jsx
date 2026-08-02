@@ -38,7 +38,7 @@ const Eventos = () => {
                 desc="Un espacio para resaltar una brigada, jornada o actividad importante del proyecto."
             />
 
-            <div className="max-w-[1180px] mx-auto w-[90%] flex flex-col gap-6">
+            <div className="max-w-6xl mx-auto w-11/12 flex flex-col gap-6">
 
                 <CardHorizontal
                     imagen="https://picsum.photos/400/300"
@@ -56,7 +56,7 @@ Esta actividad representó el impacto del proceso de modernización y equipamien
                 desc="Aquí puedes colocar las actividades futuras del proyecto. Te las dejo listas para que solo cambies fecha o detalles cuando los tengas."
             />
 
-            <div className="max-w-[1180px] mx-auto w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <PostCard
                     titulo="Brigada médica comunitaria"
@@ -82,7 +82,7 @@ Esta actividad representó el impacto del proceso de modernización y equipamien
                 desc="Un resumen de algunas actividades importantes que han formado parte del trabajo del proyecto."
             />
 
-            <div className="max-w-[1180px] mx-auto w-[90%]">
+            <div className="max-w-6xl mx-auto w-11/12">
                 <LineaEventos items={actividades} />
             </div>
 

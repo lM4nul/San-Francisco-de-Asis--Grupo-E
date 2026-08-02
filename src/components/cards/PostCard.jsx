@@ -22,7 +22,7 @@ const PostCard = ({
                 <h3 className="text-2xl font-bold leading-tight">{titulo}</h3>
                 {descripcion && <p className="text-neutral-600 leading-7">{descripcion}</p>}
                 {enlace && (
-                    <Link to={enlace} className="text-[#e97b1e] font-bold inline-block">
+                    <Link to={enlace} className="text-orange-500 font-bold inline-block">
                         {textoEnlace}
                     </Link>
                 )}

@@ -18,7 +18,7 @@ const Inicio = () => {
 
             <SubTitle subt="Noticias y eventos recientes" />
 
-            <div className="max-w-[1180px] mx-auto w-[90%] tarjetas-noticias">
+            <div className="max-w-6xl mx-auto w-11/12 tarjetas-noticias">
                 <PostCard
                     imgUrl="https://picsum.photos/400/250"
                     altText="Imagen de Noticia 1"

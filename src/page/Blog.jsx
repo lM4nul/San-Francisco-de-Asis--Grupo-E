@@ -17,14 +17,14 @@ const Blog = () => {
 
             </div>
 
-            <div className="max-w-[1180px] mx-auto w-[90%]">
+            <div className="max-w-6xl mx-auto w-11/12">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-lg border border-neutral-200">
 
                     <img
                         src="https://picsum.photos/700/500"
                         alt="Laboratorio Santa María"
-                        className="w-full h-full min-h-[350px] object-cover"
+                        className="w-full h-full min-h-88 object-cover"
                     />
 
                     <div className="flex flex-col justify-center p-8 md:p-10">
@@ -47,7 +47,7 @@ const Blog = () => {
 
                         <a
                             href="#inicio-blog"
-                            className="text-[#e97b1e] font-bold"
+                            className="text-orange-500 font-bold"
                         >
                             Leer artículo completo
                         </a>
@@ -63,7 +63,7 @@ const Blog = () => {
                 desc="Estas publicaciones presentan parte del trabajo, el impacto y las nuevas iniciativas del Proyecto San Francisco de Asís."
             />
 
-            <div className="max-w-[1180px] mx-auto w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <PostCard
                     imgUrl="https://picsum.photos/seed/atencion-medica/500/320"

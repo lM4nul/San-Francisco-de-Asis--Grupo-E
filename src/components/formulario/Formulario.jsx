@@ -47,24 +47,24 @@ const Formulario = ({
     }
 
     const claseCampo = (campo) => {
-        const base = "w-full rounded-[14px] border bg-[#fcfbf7] px-4 py-3.5 text-base outline-none transition focus:bg-white"
+        const base = "w-full rounded-xl border bg-stone-50 px-4 py-3.5 text-base outline-none transition focus:bg-white"
         return errores[campo]
             ? `${base} border-red-600 focus:border-red-600`
-            : `${base} border-[#e3dfd6] focus:border-[#67c9cf]`
+            : `${base} border-stone-300 focus:border-cyan-500`
     }
 
     return (
-        <div className={`w-full rounded-3xl border border-[#ebe6dc] bg-white p-6 shadow-[0_10px_25px_rgba(0,0,0,0.07)] md:p-8 ${className}`}>
-            <h2 className="mb-5 text-3xl font-bold leading-tight text-[#2b2b2b]">{titulo}</h2>
+        <div className={`w-full rounded-3xl border border-stone-200 bg-white p-6 shadow-lg md:p-8 ${className}`}>
+            <h2 className="mb-5 text-3xl font-bold leading-tight text-neutral-800">{titulo}</h2>
 
             <form id={id} className="scroll-mt-32" onSubmit={enviarFormulario} noValidate>
-                <div className="grid grid-cols-1 gap-x-[18px] md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-x-4 md:grid-cols-2">
                     {campos.map((campo) => (
                         <div
                             key={campo.nombre}
-                            className={`mb-[18px] ${campo.anchoCompleto ? "md:col-span-2" : ""}`}
+                            className={`mb-4 ${campo.anchoCompleto ? "md:col-span-2" : ""}`}
                         >
-                            <label htmlFor={campo.nombre} className="mb-2 block font-bold text-[#2b2b2b]">
+                            <label htmlFor={campo.nombre} className="mb-2 block font-bold text-neutral-800">
                                 {campo.etiqueta}
                             </label>
 
@@ -73,7 +73,7 @@ const Formulario = ({
                                     id={campo.nombre}
                                     name={campo.nombre}
                                     placeholder={campo.placeholder}
-                                    className={`${claseCampo(campo.nombre)} min-h-[140px] resize-y`}
+                                    className={`${claseCampo(campo.nombre)} min-h-36 resize-y`}
                                 />
                             ) : (
                                 <input
@@ -94,7 +94,7 @@ const Formulario = ({
 
                 <button
                     type="submit"
-                    className="cursor-pointer rounded-[14px] bg-[#e97b1e] px-[22px] py-[13px] font-bold text-white transition hover:bg-[#d86e17]"
+                    className="cursor-pointer rounded-xl bg-orange-500 px-6 py-3.5 font-bold text-white transition hover:bg-orange-600"
                 >
                     {textoBoton}
                 </button>
