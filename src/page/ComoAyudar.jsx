@@ -1,57 +1,40 @@
-import { useState } from "react"
 import { Link } from "react-router"
+import  Formulario  from '../components/formulario/Formulario'
+
+const camposVoluntariado = [
+    {
+        nombre: "nombre",
+        etiqueta: "Nombre completo",
+        tipo: "text",
+        placeholder: "Escribe tu nombre completo",
+        validar: (v) => (!/^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{3,}$/.test(v) ? "Escribe un nombre válido." : null),
+    },
+    {
+        nombre: "telefono",
+        etiqueta: "Teléfono",
+        tipo: "text",
+        placeholder: "9999-9999",
+        validar: (v) => (!/^(?:\+504\s?)?\d{4}-?\d{4}$/.test(v) ? "Escribe un teléfono válido." : null),
+    },
+    {
+        nombre: "correo",
+        etiqueta: "Correo electrónico",
+        tipo: "email",
+        placeholder: "Tu correo electrónico",
+        anchoCompleto: true,
+        validar: (v) => (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? "Escribe un correo válido." : null),
+    },
+    {
+        nombre: "motivo",
+        etiqueta: "¿Por qué deseas ayudar?",
+        tipo: "textarea",
+        placeholder: "Escribe brevemente por qué deseas formar parte del voluntariado",
+        anchoCompleto: true,
+        validar: (v) => (v.length < 10 ? "Escribe al menos 10 caracteres." : null),
+    },
+];
 
 const ComoAyudar = () => {
-    const [errores, setErrores] = useState({})
-    const [mensaje, setMensaje] = useState("")
-    const [enviado, setEnviado] = useState(false)
-
-    const enviarFormulario = (evento) => {
-        evento.preventDefault()
-
-        const formulario = evento.currentTarget
-        const datos = new FormData(formulario)
-        const nombre = datos.get("nombre").trim()
-        const telefono = datos.get("telefono").trim()
-        const correo = datos.get("correo").trim()
-        const motivo = datos.get("motivo").trim()
-        const nuevosErrores = {}
-
-        if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{3,}$/.test(nombre)) {
-            nuevosErrores.nombre = "Escribe un nombre válido."
-        }
-
-        if (!/^(?:\+504\s?)?\d{4}-?\d{4}$/.test(telefono)) {
-            nuevosErrores.telefono = "Escribe un teléfono válido."
-        }
-
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
-            nuevosErrores.correo = "Escribe un correo válido."
-        }
-
-        if (motivo.length < 10) {
-            nuevosErrores.motivo = "Escribe al menos 10 caracteres."
-        }
-
-        if (Object.keys(nuevosErrores).length > 0) {
-            setErrores(nuevosErrores)
-            setMensaje("Revisa los campos marcados e inténtalo de nuevo.")
-            setEnviado(false)
-            return
-        }
-
-        setErrores({})
-        setMensaje("Tu solicitud fue enviada correctamente.")
-        setEnviado(true)
-        formulario.reset()
-    }
-
-    const claseCampo = (campo) => {
-        const base = "w-full rounded-[14px] border bg-[#fcfbf7] px-4 py-3.5 text-base outline-none transition focus:bg-white"
-        return errores[campo]
-            ? `${base} border-red-600 focus:border-red-600`
-            : `${base} border-[#e3dfd6] focus:border-[#67c9cf]`
-    }
 
     return (
         <>
@@ -187,73 +170,13 @@ const ComoAyudar = () => {
                         </div>
                     </div>
 
-                    <div className="w-full rounded-3xl border border-[#ebe6dc] bg-white p-6 shadow-[0_10px_25px_rgba(0,0,0,0.07)] md:w-[48%] md:p-8">
-                        <h2 className="mb-5 text-3xl font-bold leading-tight text-[#2b2b2b]">Formulario de voluntariado</h2>
-
-                        <form id="formVoluntariado" className="scroll-mt-32" onSubmit={enviarFormulario} noValidate>
-                            <div className="grid grid-cols-1 gap-x-[18px] md:grid-cols-2">
-                                <div className="mb-[18px]">
-                                    <label htmlFor="nombre" className="mb-2 block font-bold text-[#2b2b2b]">Nombre completo</label>
-                                    <input
-                                        type="text"
-                                        id="nombre"
-                                        name="nombre"
-                                        placeholder="Escribe tu nombre completo"
-                                        className={claseCampo("nombre")}
-                                    />
-                                    {errores.nombre && <p className="mt-1 text-sm text-red-600">{errores.nombre}</p>}
-                                </div>
-
-                                <div className="mb-[18px]">
-                                    <label htmlFor="telefono" className="mb-2 block font-bold text-[#2b2b2b]">Teléfono</label>
-                                    <input
-                                        type="text"
-                                        id="telefono"
-                                        name="telefono"
-                                        placeholder="9999-9999"
-                                        className={claseCampo("telefono")}
-                                    />
-                                    {errores.telefono && <p className="mt-1 text-sm text-red-600">{errores.telefono}</p>}
-                                </div>
-                            </div>
-
-                            <div className="mb-[18px]">
-                                <label htmlFor="correo" className="mb-2 block font-bold text-[#2b2b2b]">Correo electrónico</label>
-                                <input
-                                    type="email"
-                                    id="correo"
-                                    name="correo"
-                                    placeholder="Tu correo electrónico"
-                                    className={claseCampo("correo")}
-                                />
-                                {errores.correo && <p className="mt-1 text-sm text-red-600">{errores.correo}</p>}
-                            </div>
-
-                            <div className="mb-[18px]">
-                                <label htmlFor="motivo" className="mb-2 block font-bold text-[#2b2b2b]">¿Por qué deseas ayudar?</label>
-                                <textarea
-                                    id="motivo"
-                                    name="motivo"
-                                    placeholder="Escribe brevemente por qué deseas formar parte del voluntariado"
-                                    className={`${claseCampo("motivo")} min-h-[140px] resize-y`}
-                                />
-                                {errores.motivo && <p className="mt-1 text-sm text-red-600">{errores.motivo}</p>}
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="cursor-pointer rounded-[14px] bg-[#e97b1e] px-[22px] py-[13px] font-bold text-white transition hover:bg-[#d86e17]"
-                            >
-                                Enviar solicitud
-                            </button>
-
-                            {mensaje && (
-                                <p className={`mt-4 font-bold ${enviado ? "text-green-700" : "text-red-600"}`}>
-                                    {mensaje}
-                                </p>
-                            )}
-                        </form>
-                    </div>
+                    <Formulario
+                        id="formVoluntariado"
+                        titulo="Formulario de voluntariado"
+                        textoBoton="Enviar solicitud"
+                        campos={camposVoluntariado}
+                        className="w-full md:w-[48%]"
+                    />
                 </div>
             </section>
         </>
