@@ -23,9 +23,6 @@ function App() {
         <Outlet /> {/*Aqui se maneja toda la logica del rout OJO no borrar / info sacada de la documentacion*/}
 
 
-
-        
-
       </main>
 
       <footer className="bg-neutral-900 text-white mt-5">
