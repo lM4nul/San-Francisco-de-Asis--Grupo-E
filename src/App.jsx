@@ -28,7 +28,7 @@ function App() {
 
       </main>
 
-      <footer className="bg-neutral-900 text-white">
+      <footer className="bg-neutral-900 text-white mt-5">
         <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold text-orange-400  mb-3">Ubicación</h3>

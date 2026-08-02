@@ -15,7 +15,7 @@ const PostCard = ({
 }) => {
     return (
         <Card>
-            <CardHeaderImg imgUrl={imgUrl} altText={altText} />
+            {imgUrl==null ? null : <CardHeaderImg imgUrl={imgUrl} altText={altText} />}
             <CardBody>
                 {tag && <p className="text-cyan-500 font-bold">{tag}</p>}
                 {fecha && <p className="text-neutral-500 text-sm">{fecha}</p>}

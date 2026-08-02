@@ -1,7 +1,7 @@
 const HeroPanel = ({ evento ,imagen, titulo, descripcion }) => {
     return (
         <section
-            className="relative w-full h-48 md:h-64 lg:h-80 bg-cover bg-center flex items-center"
+            className="relative w-full h-48 md:h-64 lg:h-80 bg-cover bg-center flex items-center mb-5"
             style={{ backgroundImage: `url(${imagen})` }}
         >
             <div className="absolute inset-0 bg-black/50" />
