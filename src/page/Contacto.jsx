@@ -40,7 +40,7 @@ const Contacto = () => {
         <>
             <HeroPanel
                 evento="Estamos para ayudarte"
-                imagen="https://picsum.photos/1200/400"
+                imagen="/img/contacto/contactanos.webp"
                 titulo="Contáctanos"
                 descripcion="Si deseas comunicarte con el proyecto, pedir información o conocer más sobre nuestros servicios y actividades, puedes escribirnos por medio de este formulario."
             />
