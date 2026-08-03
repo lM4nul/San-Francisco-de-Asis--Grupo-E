@@ -1,10 +1,38 @@
-const Inicio=()=>{
+import { HeroCard } from '../components/hero-panel'
+import { PostCard } from '../components/cards'
+import  SubTitle  from '../components/titles/subt'
+import { Link } from 'react-router'
 
-    return(
+const Inicio = () => {
+    return (
         <>
-        
-        <h1>Inicio</h1>
-        
+            <HeroCard
+                tag="Atención en salud con compromiso social"
+                titulo="Apoyando a las comunidades que más lo necesitan"
+                descripcion="El Proyecto San Francisco de Asís brinda atención en salud a personas de escasos recursos, ofreciendo servicios médicos, laboratorio clínico y apoyo farmacéutico."
+                imagen="/img/index/Proyecto.webp"
+            >
+                <Link to="/nosotros" className="boton boton-principal">Conocer Mas</Link>
+                <Link to="/donaciones" className="boton boton-secundario">Donar ahora</Link>
+            </HeroCard>
+
+            <SubTitle subt="Noticias y eventos recientes" />
+
+            <div className="max-w-6xl mx-auto w-11/12 tarjetas-noticias">
+                <PostCard
+                    imgUrl="/img/index/noticia-1.webp"
+                    altText="Imagen de Noticia 1"
+                    titulo="Modernización del laboratorio"
+                    enlace="/blog"
+                />
+                <PostCard
+                    imgUrl="/img/index/noticia-2.webp"
+                    altText="Imagen de Noticia 2"
+                    titulo="Próxima jornada o actividad"
+                    enlace="/eventos"
+                    textoEnlace="Ver eventos"
+                />
+            </div>
         </>
     )
 }

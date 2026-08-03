@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+@layer components {
+
+    /* CARDS */
+    .card {
+        @apply bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-md hover:-translate-y-1 transition-transform duration-300;
+    }
+
+    .card-body { 
+        @apply p-6;
+        
+        h3{
+            @apply text-2xl text-neutral-800 mb-2.5 font-bold;
+        }
+    }
+    .card-header { @apply p-6; }
+    .card-header-img { @apply w-full h-60 object-cover; }
+    .card-footer { @apply border-t border-stone-200 p-6; }
+
+    /* BOTONES */
+    .boton {
+        @apply inline-block py-3.5 px-6 rounded-xl font-bold text-base transition-colors duration-300;
+    }
+
+    .boton-principal {
+        @apply bg-orange-500 text-white hover:bg-orange-600;
+    }
+
+    .boton-secundario {
+        @apply bg-neutral-800 text-white hover:bg-neutral-900;
+    }
+
+    /* SECCIONES */
+    .seccion {
+        @apply py-20;
+    }
+
+    .fondo-suave {
+        @apply bg-stone-100;
+    }
+
+    .titulo-seccion {
+        @apply text-center mb-9;
+
+        h2 {
+            @apply text-3xl text-neutral-800 mb-3;
+        }
+    }
+
+    /* TARJETAS NOTICIAS */
+    .tarjetas-noticias {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+    }
+}
