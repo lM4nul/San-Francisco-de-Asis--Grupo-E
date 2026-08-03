@@ -47,14 +47,14 @@ const ComoAyudar = () => {
                 descripcion="Existen diferentes maneras de apoyar al Proyecto San Francisco de Asís. Tu ayuda puede convertirse en atención médica, estudios clínicos, medicamentos y acompañamiento para muchas familias."
             />
 
-            <section className="bg-orange-50 py-20">
-                <div className="mx-auto w-11/12 max-w-6xl">
+            <section className="seccion seccion-crema">
+                <div className="contenedor">
                     <SubTitle
                         subt="Formas de colaborar"
                         desc="Puedes apoyar esta labor social de distintas maneras, según tus posibilidades y tu disponibilidad."
                     />
 
-                    <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                    <div className="grid-tres-col">
                         <CardIcono
                             icono={
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-6 w-6" aria-hidden="true">
@@ -94,14 +94,14 @@ const ComoAyudar = () => {
                 </div>
             </section>
 
-            <section className="bg-stone-100 py-20">
-                <div className="mx-auto w-11/12 max-w-6xl">
+            <section className="seccion fondo-suave">
+                <div className="contenedor">
                     <SubTitle
                         subt="¿Cómo funciona el apoyo?"
                         desc="Hemos pensado este proceso de forma sencilla para que cualquier persona pueda colaborar."
                     />
 
-                    <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+                    <div className="grid-tres-col-ajust">
                         <CardPaso
                             numero="1"
                             titulo="Elige cómo ayudar"
@@ -123,21 +123,21 @@ const ComoAyudar = () => {
                 </div>
             </section>
 
-            <section className="bg-orange-50 py-20">
-                <div className="mx-auto grid w-11/12 max-w-6xl grid-cols-1 items-start gap-8 md:grid-cols-2">
+            <section className="seccion seccion-crema">
+                <div className="contenedor grid-formulario">
                     <div className="w-full">
-                        <h2 className="mb-4 text-4xl font-bold leading-tight text-neutral-800">Forma parte del cambio</h2>
-                        <p className="mb-4 leading-relaxed text-neutral-500">
+                        <h2 className="titulo-grande">Forma parte del cambio</h2>
+                        <p className="parrafo-suave mb-4">
                             Ser voluntario es una manera valiosa de contribuir al bienestar de la comunidad. Puedes apoyar en actividades, jornadas, acompañamiento, organización y otras áreas según la necesidad del proyecto.
                         </p>
-                        <p className="mb-6 leading-relaxed text-neutral-500">
+                        <p className="parrafo-suave mb-6">
                             Completa este formulario si deseas que te tomemos en cuenta como posible voluntario o voluntaria.
                         </p>
 
-                        <div className="space-y-3 font-bold text-neutral-800">
-                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Apoyo en actividades comunitarias</p>
-                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Participación en jornadas o eventos</p>
-                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Tiempo y servicio a favor de la comunidad</p>
+                        <div className="lista-checks">
+                            <p><span>✔</span> Apoyo en actividades comunitarias</p>
+                            <p><span>✔</span> Participación en jornadas o eventos</p>
+                            <p><span>✔</span> Tiempo y servicio a favor de la comunidad</p>
                         </div>
                     </div>
 

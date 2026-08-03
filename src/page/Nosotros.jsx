@@ -37,12 +37,12 @@ const Nosotros = () => {
             />
 
             {/* Historia */}
-            <section className="bg-orange-50 py-20">
-                <div className="mx-auto grid w-11/12 max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-2">
+            <section className="seccion seccion-crema">
+                <div className="contenedor grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                     <img
                         src="img/historia-proyecto.webp"
                         alt="Historia del Proyecto San Francisco de Asís"
-                        className="h-80 w-full rounded-3xl object-cover shadow-md"
+                        className="img-seccion rounded-3xl shadow-md"
                     />
 
                     <div>
@@ -81,14 +81,14 @@ const Nosotros = () => {
             </section>
 
          
-            <section className="bg-stone-100 py-20">
-                <div className="mx-auto w-11/12 max-w-6xl">
+            <section className="seccion fondo-suave">
+                <div className="contenedor">
                     <SubTitle
                         subt="Misión y visión"
                         desc="Nuestra labor está guiada por el compromiso de servir con calidad, solidaridad y vocación humana."
                     />
 
-                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <div className="grid-basica">
                         <CardSimple
                             titulo="Misión"
                             descripcion="Brindar servicios de atención en salud con calidad a personas de escasos recursos económicos, poniendo a su disposición personal capacitado, equipo médico, servicios de laboratorio e insumos que contribuyan a mejorar su bienestar."
@@ -102,14 +102,14 @@ const Nosotros = () => {
                 </div>
             </section>
 
-            <section className="bg-orange-50 py-20">
-                <div className="mx-auto w-11/12 max-w-6xl">
+            <section className="seccion seccion-crema">
+                <div className="contenedor">
                     <SubTitle
                         subt="Nuestros valores"
                         desc="Estos principios orientan nuestro trabajo diario y la manera en que servimos a cada persona."
                     />
 
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="grid-cuatro">
                         <CardSimple
                             titulo="Solidaridad"
                             descripcion="Trabajamos pensando en quienes más necesitan apoyo y atención."
@@ -134,8 +134,8 @@ const Nosotros = () => {
             </section>
 
      
-            <section className="bg-stone-100 py-20">
-                <div className="mx-auto w-11/12 max-w-6xl">
+            <section className="seccion fondo-suave">
+                <div className="contenedor">
                     <SubTitle
                         subt="Nuestro equipo"
                         desc="Personas comprometidas con brindar atención y servicio de calidad a la comunidad."
@@ -145,12 +145,12 @@ const Nosotros = () => {
                         {equipo.map((integrante) => (
                             <article
                                 key={integrante.nombre}
-                                className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-md transition-transform duration-300 hover:-translate-y-1"
+                                className="card"
                             >
                                 <img
                                     src={integrante.imagen}
                                     alt={`${integrante.cargo}: ${integrante.nombre}`}
-                                    className="h-80 w-full object-cover object-top"
+                                    className="img-seccion object-top"
                                 />
 
                                 <div className="p-5 text-center">

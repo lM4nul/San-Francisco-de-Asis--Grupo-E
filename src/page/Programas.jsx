@@ -18,7 +18,7 @@ const Programas = () => {
                 desc="Estas son las áreas principales mediante las cuales el proyecto brinda apoyo y servicios a la comunidad."
             />
 
-            <div className="max-w-6xl mx-auto w-11/12 flex flex-col gap-6">
+            <div className="contenedor flex flex-col gap-6">
 
                 <CardHorizontal
                     imagen="img/programa-clinica.webp"
@@ -61,7 +61,7 @@ const Programas = () => {
                 desc="Además de sus áreas principales, el proyecto también ha brindado apoyo en otros servicios enfocados en la salud integral."
             />
 
-            <div className="max-w-7xl mx-auto w-11/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="contenedor-ancho grid-cuatro-compacta">
                 <CardSimple titulo="Pediatría" descripcion="Atención orientada al bienestar y seguimiento de la salud infantil." />
                 <CardSimple titulo="Psicología" descripcion="Apoyo emocional y orientación para fortalecer la salud mental de la población." />
                 <CardSimple titulo="Nutrición Clínica" descripcion="Orientación alimentaria y acompañamiento para mejorar hábitos y condiciones de salud" />

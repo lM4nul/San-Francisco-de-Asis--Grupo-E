@@ -4,7 +4,7 @@ const FaqItem = ({ pregunta, respuesta, abierta = false }) => {
     const [mostrar, setMostrar] = useState(abierta)
 
     return (
-        <article className="rounded-2xl border border-stone-200 bg-white shadow-md">
+        <article className="tarjeta">
             <button
                 type="button"
                 onClick={() => setMostrar(!mostrar)}
@@ -17,7 +17,7 @@ const FaqItem = ({ pregunta, respuesta, abierta = false }) => {
             </button>
 
             {mostrar && (
-                <div className="border-t border-stone-200 px-6 pb-6 pt-4 leading-relaxed text-neutral-500">
+                <div className="border-t border-stone-200 px-6 pb-6 pt-4 parrafo-suave">
                     <p>{respuesta}</p>
                 </div>
             )}

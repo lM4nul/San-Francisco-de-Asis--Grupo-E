@@ -54,28 +54,28 @@ const Donaciones = () => {
             />
 
 
-            <div className="max-w-7xl mx-auto w-11/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="contenedor-ancho grid-cuatro-compacta">
                 <CardSimple titulo="Atención médica" descripcion="Ayuda a fortalecer consultas, jornadas comunitarias y actividades de acompañamiento en salud." />
                 <CardSimple titulo="Laboratorio clínico" descripcion="Contribuye a la realización de estudios y al apoyo diagnóstico para pacientes de la zona." />
                 <CardSimple titulo="Medicamentos" descripcion="Permite apoyar a personas y familias que necesitan tratamiento y no siempre cuentan con recursos." />
             </div>
 
-            <section className="bg-orange-50 py-20">
-                <div className="mx-auto grid w-11/12 max-w-6xl grid-cols-1 items-start gap-8 md:grid-cols-2">
+            <section className="seccion seccion-crema">
+                <div className="contenedor grid-formulario">
                     <div className="w-full">
-                        <span className="mb-3 inline-block font-bold uppercase tracking-widest text-orange-500">Aporte con propósito</span>
-                        <h2 className="mb-4 text-4xl font-bold leading-tight text-neutral-800">Tu donación suma esperanza y bienestar</h2>
-                        <p className="mb-4 leading-relaxed text-neutral-500">
+                        <span className="etiqueta-seccion">Aporte con propósito</span>
+                        <h2 className="titulo-grande">Tu donación suma esperanza y bienestar</h2>
+                        <p className="parrafo-suave mb-4">
                             Apoyar este proyecto es una manera de colaborar con una labor social que busca acercar servicios de salud dignos, accesibles y humanos a comunidades vulnerables.
                         </p>
-                        <p className="mb-6 leading-relaxed text-neutral-500">
+                        <p className="parrafo-suave mb-6">
                             Puedes realizar aportes económicos, apoyo en especie o manifestar tu interés para recibir información sobre futuras campañas de ayuda.
                         </p>
 
-                        <div className="space-y-3 font-bold text-neutral-800">
-                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Apoyo a servicios médicos</p>
-                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Fortalecimiento del laboratorio</p>
-                            <p className="flex items-center gap-3"><span className="text-cyan-500">✔</span> Medicamentos y atención comunitaria</p>
+                        <div className="lista-checks">
+                            <p><span>✔</span> Apoyo a servicios médicos</p>
+                            <p><span>✔</span> Fortalecimiento del laboratorio</p>
+                            <p><span>✔</span> Medicamentos y atención comunitaria</p>
                         </div>
                     </div>
 

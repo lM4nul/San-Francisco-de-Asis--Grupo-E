@@ -14,9 +14,24 @@
             @apply text-2xl text-neutral-800 mb-2.5 font-bold;
         }
     }
-    .card-header { @apply p-6; }
     .card-header-img { @apply w-full h-60 object-cover; }
-    .card-footer { @apply border-t border-stone-200 p-6; }
+
+    /* TARJETAS BASE */
+    .tarjeta {
+        @apply rounded-2xl border border-stone-200 bg-white shadow-md;
+    }
+
+    .card-paso {
+        @apply rounded-2xl border border-stone-200 bg-white p-6 text-center shadow-md;
+    }
+
+    .card-simple {
+        @apply flex flex-col gap-2 p-6 bg-white rounded-2xl shadow-md text-center mb-7;
+    }
+
+    .formulario {
+        @apply w-full rounded-3xl border border-stone-200 bg-white p-6 shadow-lg md:p-8;
+    }
 
     /* BOTONES */
     .boton {
@@ -36,16 +51,130 @@
         @apply py-20;
     }
 
+    .seccion-crema {
+        @apply bg-orange-50;
+    }
+
     .fondo-suave {
         @apply bg-stone-100;
+    }
+
+    /* CONTENEDORES */
+    .contenedor {
+        @apply mx-auto w-11/12 max-w-6xl;
+    }
+
+    .contenedor-ancho {
+        @apply mx-auto w-11/12 max-w-7xl;
+    }
+
+    /* REJILLAS */
+    .grid-basica {
+        @apply grid grid-cols-1 gap-6 md:grid-cols-2;
+    }
+
+    .grid-tres {
+        @apply grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3;
+    }
+
+    .grid-cuatro {
+        @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4;
+    }
+
+    .grid-cuatro-compacta {
+        @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4;
+    }
+
+    .grid-tres-col {
+        @apply grid grid-cols-1 gap-6 md:grid-cols-3;
+    }
+
+    .grid-tres-col-ajust {
+        @apply grid grid-cols-1 gap-5 md:grid-cols-3;
+    }
+
+    .grid-dos-sm {
+        @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+    }
+
+    .grid-form {
+        @apply grid grid-cols-1 gap-x-4 md:grid-cols-2;
+    }
+
+    .grid-formulario {
+        @apply grid grid-cols-1 items-start gap-8 md:grid-cols-2;
     }
 
     .titulo-seccion {
         @apply text-center mb-9;
 
         h2 {
-            @apply text-3xl text-neutral-800 mb-3;
+            @apply text-3xl text-neutral-800 mb-3 font-bold;
         }
+    }
+
+    /* TIPOGRAFÍA DE BLOQUES */
+    .etiqueta-seccion {
+        @apply mb-3 inline-block font-bold uppercase tracking-widest text-orange-500;
+    }
+
+    .titulo-grande {
+        @apply mb-4 text-4xl font-bold leading-tight text-neutral-800;
+    }
+
+    .parrafo-suave {
+        @apply leading-relaxed text-neutral-500;
+    }
+
+    .titulo-footer {
+        @apply text-lg font-semibold text-orange-400 mb-3;
+    }
+
+    .lista-checks {
+        @apply space-y-3 font-bold text-neutral-800;
+
+        p {
+            @apply flex items-center gap-3;
+
+            span {
+                @apply text-cyan-500;
+            }
+        }
+    }
+
+    .circulo-icono {
+        @apply flex h-12 w-12 items-center justify-center rounded-full bg-cyan-50 text-orange-500;
+    }
+
+    .circulo-paso {
+        @apply mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-cyan-500 font-bold text-white;
+    }
+
+    /* FORMULARIO */
+    .campo-etiqueta {
+        @apply mb-2 block font-bold text-neutral-800;
+    }
+
+    .campo-input {
+        @apply w-full rounded-xl border bg-stone-50 px-4 py-3.5 text-base outline-none transition focus:bg-white;
+    }
+
+    .campo-input-ok {
+        @apply border-stone-300 focus:border-cyan-500;
+    }
+
+    .campo-input-error {
+        @apply border-red-600 focus:border-red-600;
+    }
+
+    /* CARRUSEL */
+    .boton-carrusel {
+        @apply absolute top-1/2 -translate-y-1/2 text-white p-2 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition duration-300 ease-in-out;
+    }
+
+    /* IMÁGENES */
+    .img-seccion {
+        @apply h-80 w-full object-cover;
     }
 
     /* TARJETAS NOTICIAS */

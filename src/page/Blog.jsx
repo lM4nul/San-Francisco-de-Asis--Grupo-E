@@ -17,7 +17,7 @@ const Blog = () => {
 
             </div>
 
-            <div className="max-w-6xl mx-auto w-11/12">
+            <div className="contenedor">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-lg border border-neutral-200">
 
@@ -56,7 +56,7 @@ const Blog = () => {
                 desc="Estas publicaciones presentan parte del trabajo, el impacto y las nuevas iniciativas del Proyecto San Francisco de Asís."
             />
 
-            <div className="max-w-6xl mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="contenedor grid-tres">
 
                 <PostCard
                     imgUrl="img/programa-clinica.webp"
