@@ -30,7 +30,7 @@ const Eventos = () => {
                 tag="Brigadas, jornadas y actividades"
                 titulo="Eventos del Proyecto"
                 descripcion="En este espacio compartimos brigadas médicas, jornadas comunitarias, actividades educativas y eventos importantes relacionados con la labor del proyecto."
-                imagen="/img/eventos/banner_eventos.webp"
+                imagen="img/banner_eventos.webp"
             />
 
             <SubTitle
@@ -41,7 +41,7 @@ const Eventos = () => {
             <div className="max-w-6xl mx-auto w-11/12 flex flex-col gap-6">
 
                 <CardHorizontal
-                    imagen="/img/eventos/noticia-1.webp"
+                    imagen="img/noticia-1.webp"
                     tag="Actividad realizada"
                     titulo="Reinauguración del Laboratorio Santa María"
                     fecha="7 de noviembre de 2023 · Reitoca, Francisco Morazán"

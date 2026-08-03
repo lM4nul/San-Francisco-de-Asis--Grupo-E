@@ -42,7 +42,7 @@ const ComoAyudar = () => {
         <>
             <HeroPanel
                 evento="Apoya nuestra labor"
-                imagen="/img/ayudar/heli2.webp"
+                imagen="img/heli2.webp"
                 titulo="¿Cómo puedes ayudar?"
                 descripcion="Existen diferentes maneras de apoyar al Proyecto San Francisco de Asís. Tu ayuda puede convertirse en atención médica, estudios clínicos, medicamentos y acompañamiento para muchas familias."
             />

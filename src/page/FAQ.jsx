@@ -6,7 +6,7 @@ const Faq = () => {
         <>
             <HeroPanel
                 evento="Dudas frecuentes"
-                imagen="/img/faq/FAQ.webp"
+                imagen="img/FAQ.webp"
                 titulo="Preguntas Frecuentes"
                 descripcion="En esta sección encontrarás respuestas rápidas sobre el proyecto, sus servicios y las formas en que puedes apoyar."
             />
@@ -54,7 +54,6 @@ const Faq = () => {
                         />
 
                         <FaqItem
-                            abierta
                             pregunta="¿Dónde está ubicado el proyecto?"
                             respuesta="El proyecto está ubicado en Reitoca, Francisco Morazán, Honduras, y atiende a comunidades cercanas de la zona."
                         />

@@ -4,22 +4,22 @@ import SubTitle from "../components/titles/subt"
 
 const equipo = [
     {
-        imagen: "/img/nosotros/equipo-1.webp",
+        imagen: "img/equipo-1.webp",
         cargo: "Director ejecutivo y médico asistencial",
         nombre: "Dr. Marco Mejía",
     },
     {
-        imagen: "/img/nosotros/equipo-2.webp",
+        imagen: "img/equipo-2.webp",
         cargo: "Enfermera auxiliar",
         nombre: "Cristibel Córdova",
     },
     {
-        imagen: "/img/nosotros/equipo-4.webp",
+        imagen: "img/equipo-4.webp",
         cargo: "Regente de laboratorio",
         nombre: "Dra. Margarita Zúniga",
     },
     {
-        imagen: "/img/nosotros/equipo-3.webp",
+        imagen: "img/equipo-3.webp",
         cargo: "Auxiliar de laboratorio",
         nombre: "Miguel Ángel Zelaya",
     },
@@ -31,7 +31,7 @@ const Nosotros = () => {
            
             <HeroPanel
                 evento="Conoce sobre nuestra labor"
-                imagen="/img/nosotros/nosotros-banner.webp"
+                imagen="img/nosotros-banner.webp"
                 titulo="Acerca de Nosotros"
                 descripcion="Somos un proyecto de asistencia social y salud sin fines de lucro, comprometido con el bienestar de las comunidades más necesitadas del sur de Francisco Morazán."
             />
@@ -40,7 +40,7 @@ const Nosotros = () => {
             <section className="bg-orange-50 py-20">
                 <div className="mx-auto grid w-11/12 max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-2">
                     <img
-                        src="/img/nosotros/historia-proyecto.webp"
+                        src="img/historia-proyecto.webp"
                         alt="Historia del Proyecto San Francisco de Asís"
                         className="h-80 w-full rounded-3xl object-cover shadow-md"
                     />
