@@ -10,7 +10,7 @@ const Inicio = () => {
                 tag="Atención en salud con compromiso social"
                 titulo="Apoyando a las comunidades que más lo necesitan"
                 descripcion="El Proyecto San Francisco de Asís brinda atención en salud a personas de escasos recursos, ofreciendo servicios médicos, laboratorio clínico y apoyo farmacéutico."
-                imagen="https://picsum.photos/600/350"
+                imagen="/img/index/Proyecto.webp"
             >
                 <Link to="/nosotros" className="boton boton-principal">Conocer Mas</Link>
                 <Link to="/donaciones" className="boton boton-secundario">Donar ahora</Link>
@@ -20,13 +20,13 @@ const Inicio = () => {
 
             <div className="max-w-6xl mx-auto w-11/12 tarjetas-noticias">
                 <PostCard
-                    imgUrl="https://picsum.photos/400/250"
+                    imgUrl="/img/index/noticia-1.webp"
                     altText="Imagen de Noticia 1"
                     titulo="Modernización del laboratorio"
                     enlace="/blog"
                 />
                 <PostCard
-                    imgUrl="https://picsum.photos/400/250"
+                    imgUrl="/img/index/noticia-2.webp"
                     altText="Imagen de Noticia 2"
                     titulo="Próxima jornada o actividad"
                     enlace="/eventos"

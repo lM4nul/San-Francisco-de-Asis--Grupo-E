@@ -10,8 +10,8 @@ function App() {
 
 
       <header className="sticky top-0 z-50 bg-neutral-50 mb-3">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-4 p-3">
-          <img src="https://picsum.photos/50/50" alt="Logo" className="rounded-full" />
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-4 p-3 ">
+          <img src="/img/index/logo-proyecto.webp" alt="Logo" className="rounded-full max-w-24" />
           <p className="cursor-default "> <p className="text-xl">Proyecto San Francisco de Asís</p> <p className="text-sm">Salud y servicio para la comunidad</p> </p>
           <Nav links={links} />
         </div>

@@ -3,9 +3,15 @@ import { useState, useEffect } from "react";
 function Galeria() {
   // Array de imágenes del carrusel 
   const slides = [  
-    "https://picsum.photos/id/1015/600/400",  
-    "https://picsum.photos/id/120/600/400",
-    "https://picsum.photos/id/111/600/400"
+    "/img/galeria/img1.webp",  
+    "/img/galeria/img2.webp",
+    "/img/galeria/img3.webp",
+    "/img/galeria/img4.webp",
+    "/img/galeria/img5.webp",
+    "/img/galeria/img7.webp",
+    "/img/galeria/img8.webp",
+    "/img/galeria/programa-clinica.webp",
+    "/img/galeria/nutri.webp"
   ];
 
   // Estado para controlar la imagen actual

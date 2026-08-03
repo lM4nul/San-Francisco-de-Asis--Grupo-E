@@ -6,7 +6,7 @@ const Faq = () => {
         <>
             <HeroPanel
                 evento="Dudas frecuentes"
-                imagen="https://picsum.photos/1200/400"
+                imagen="/img/faq/FAQ.webp"
                 titulo="Preguntas Frecuentes"
                 descripcion="En esta sección encontrarás respuestas rápidas sobre el proyecto, sus servicios y las formas en que puedes apoyar."
             />
