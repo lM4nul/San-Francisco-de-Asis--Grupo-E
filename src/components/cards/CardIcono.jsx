@@ -19,11 +19,11 @@ const CardIcono = ({ icono, titulo, descripcion, enlace, textoEnlace }) => {
     return (
         <Card>
             <CardBody>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-cyan-50 text-orange-500">
+                <div className="circulo-icono mb-4">
                     {icono}
                 </div>
                 <h3>{titulo}</h3>
-                <p className="mb-4 leading-relaxed text-neutral-500">{descripcion}</p>
+                <p className="parrafo-suave mb-4">{descripcion}</p>
                 {renderEnlace()}
             </CardBody>
         </Card>

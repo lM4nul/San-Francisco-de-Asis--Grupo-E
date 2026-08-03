@@ -11,10 +11,10 @@ const Faq = () => {
                 descripcion="En esta sección encontrarás respuestas rápidas sobre el proyecto, sus servicios y las formas en que puedes apoyar."
             />
 
-            <section className="bg-orange-50 py-20">
-                <div className="mx-auto w-11/12 max-w-6xl">
-                    <div className="mb-9 text-center">
-                        <h2 className="mb-3 text-3xl font-bold text-neutral-800">Resolvemos tus dudas</h2>
+            <section className="seccion seccion-crema">
+                <div className="contenedor">
+                    <div className="titulo-seccion">
+                        <h2>Resolvemos tus dudas</h2>
                     </div>
 
                     <div className="mx-auto max-w-4xl space-y-4">

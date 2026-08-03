@@ -11,6 +11,7 @@ const Inicio = () => {
                 titulo="Apoyando a las comunidades que más lo necesitan"
                 descripcion="El Proyecto San Francisco de Asís brinda atención en salud a personas de escasos recursos, ofreciendo servicios médicos, laboratorio clínico y apoyo farmacéutico."
                 imagen="img/Proyecto.webp"
+                tituloH1
             >
                 <Link to="/nosotros" className="boton boton-principal">Conocer Mas</Link>
                 <Link to="/donaciones" className="boton boton-secundario">Donar ahora</Link>

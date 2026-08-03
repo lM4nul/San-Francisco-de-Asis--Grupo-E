@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 
 function Galeria() {
-  // Array de imágenes del carrusel 
-  const slides = [  
-    "img/img1.webp",  
-    "img/img2.webp",
-    "img/img3.webp",
-    "img/img4.webp",
-    "img/img5.webp",
-    "img/img7.webp",
-    "img/img8.webp",
-    "img/programa-clinica.webp",
-    "img/nutri.webp"
+  // Array de imágenes del carrusel
+  const slides = [
+    { src: "img/img1.webp", alt: "Jornada médica del Proyecto San Francisco de Asís" },
+    { src: "img/img2.webp", alt: "Atención médica a pacientes de la comunidad" },
+    { src: "img/img3.webp", alt: "Equipo del proyecto durante una actividad comunitaria" },
+    { src: "img/img4.webp", alt: "Servicios del laboratorio clínico Santa María" },
+    { src: "img/img5.webp", alt: "Instalaciones del Proyecto San Francisco de Asís" },
+    { src: "img/img7.webp", alt: "Personal del proyecto en una jornada de salud" },
+    { src: "img/img8.webp", alt: "Entrega de apoyo y medicamentos a la comunidad" },
+    { src: "img/programa-clinica.webp", alt: "Clínica Santa María, atención médica general" },
+    { src: "img/nutri.webp", alt: "Proyecto de nutrición infantil de la comunidad" },
   ];
 
   // Estado para controlar la imagen actual
@@ -38,14 +38,14 @@ function Galeria() {
   return (
     <section className="p-4 text-center flex flex-col">
       <h1 className="text-xl font-bold mb-4">Galería de Fotos</h1>
-      <h1 className="text-xl mb-4">Imágenes del trabajo, la atención y los espacios del Proyecto San Francisco de Asís.</h1>
+      <h2 className="text-xl mb-4">Imágenes del trabajo, la atención y los espacios del Proyecto San Francisco de Asís.</h2>
 
       <div className="relative w-full max-w-5xl mx-auto h-120 overflow-hidden rounded-lg shadow-md bg-neutral-200">
         {slides.map((slide, index) => (
           <img
             key={index}
-            src={slide}
-            alt={`Slide ${index}`}
+            src={slide.src}
+            alt={slide.alt}
             className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
               current === index ? "opacity-100" : "opacity-0"
             }`}
@@ -55,11 +55,7 @@ function Galeria() {
         {/* Botón anterior */}
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-2 -translate-y-1/2 
-            text-white p-2 rounded-full 
-             hover:bg-gray-600 focus:outline-none 
-             focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 
-             transition duration-300 ease-in-out"
+          className="boton-carrusel left-2"
         >
           ◀
         </button>
@@ -67,11 +63,7 @@ function Galeria() {
         {/* Botón siguiente */}
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-2 -translate-y-1/2 
-             text-white p-2 rounded-full 
-             hover:bg-gray-600 focus:outline-none 
-             focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 
-             transition duration-300 ease-in-out"
+          className="boton-carrusel right-2"
         >
           ▶
         </button>

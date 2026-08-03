@@ -47,24 +47,24 @@ const Formulario = ({
     }
 
     const claseCampo = (campo) => {
-        const base = "w-full rounded-xl border bg-stone-50 px-4 py-3.5 text-base outline-none transition focus:bg-white"
+        const base = "campo-input";
         return errores[campo]
-            ? `${base} border-red-600 focus:border-red-600`
-            : `${base} border-stone-300 focus:border-cyan-500`
+            ? `${base} campo-input-error`
+            : `${base} campo-input-ok`
     }
 
     return (
-        <div className={`w-full rounded-3xl border border-stone-200 bg-white p-6 shadow-lg md:p-8 ${className}`}>
+        <div className={`formulario ${className}`}>
             <h2 className="mb-5 text-3xl font-bold leading-tight text-neutral-800">{titulo}</h2>
 
             <form id={id} className="scroll-mt-32" onSubmit={enviarFormulario} noValidate>
-                <div className="grid grid-cols-1 gap-x-4 md:grid-cols-2">
+                <div className="grid-form">
                     {campos.map((campo) => (
                         <div
                             key={campo.nombre}
                             className={`mb-4 ${campo.anchoCompleto ? "md:col-span-2" : ""}`}
                         >
-                            <label htmlFor={campo.nombre} className="mb-2 block font-bold text-neutral-800">
+                            <label htmlFor={campo.nombre} className="campo-etiqueta">
                                 {campo.etiqueta}
                             </label>
 
@@ -94,7 +94,7 @@ const Formulario = ({
 
                 <button
                     type="submit"
-                    className="cursor-pointer rounded-xl bg-orange-500 px-6 py-3.5 font-bold text-white transition hover:bg-orange-600"
+                    className="boton boton-principal cursor-pointer"
                 >
                     {textoBoton}
                 </button>
