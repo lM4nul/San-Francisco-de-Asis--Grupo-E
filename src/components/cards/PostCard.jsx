@@ -15,14 +15,14 @@ const PostCard = ({
 }) => {
     return (
         <Card>
-            <CardHeaderImg imgUrl={imgUrl} altText={altText} />
+            {imgUrl==null ? null : <CardHeaderImg imgUrl={imgUrl} altText={altText} />}
             <CardBody>
                 {tag && <p className="text-cyan-500 font-bold">{tag}</p>}
                 {fecha && <p className="text-neutral-500 text-sm">{fecha}</p>}
                 <h3 className="text-2xl font-bold leading-tight">{titulo}</h3>
                 {descripcion && <p className="text-neutral-600 leading-7">{descripcion}</p>}
                 {enlace && (
-                    <Link to={enlace} className="text-[#e97b1e] font-bold inline-block">
+                    <Link to={enlace} className="text-orange-500 font-bold inline-block">
                         {textoEnlace}
                     </Link>
                 )}

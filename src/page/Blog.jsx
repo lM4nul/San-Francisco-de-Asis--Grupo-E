@@ -6,7 +6,7 @@ import  SubTitle  from '../components/titles/subt'
 const Blog = () => {
     return (
         <>
-            <div id="inicio-blog">
+            <div>
 
                 <HeroPanel
                     evento="Noticias, artículos y avances"
@@ -17,14 +17,14 @@ const Blog = () => {
 
             </div>
 
-            <div className="max-w-[1180px] mx-auto w-[90%]">
+            <div className="max-w-6xl mx-auto w-11/12">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-lg border border-neutral-200">
 
                     <img
                         src="https://picsum.photos/700/500"
                         alt="Laboratorio Santa María"
-                        className="w-full h-full min-h-[350px] object-cover"
+                        className="w-full h-full min-h-88 object-cover"
                     />
 
                     <div className="flex flex-col justify-center p-8 md:p-10">
@@ -45,13 +45,6 @@ const Blog = () => {
                             por el proyecto.
                         </p>
 
-                        <a
-                            href="#inicio-blog"
-                            className="text-[#e97b1e] font-bold"
-                        >
-                            Leer artículo completo
-                        </a>
-
                     </div>
 
                 </div>
@@ -63,7 +56,7 @@ const Blog = () => {
                 desc="Estas publicaciones presentan parte del trabajo, el impacto y las nuevas iniciativas del Proyecto San Francisco de Asís."
             />
 
-            <div className="max-w-[1180px] mx-auto w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <PostCard
                     imgUrl="https://picsum.photos/seed/atencion-medica/500/320"
@@ -71,7 +64,6 @@ const Blog = () => {
                     tag="Artículo institucional"
                     titulo="Más de 55,000 atenciones médicas que reflejan compromiso social"
                     descripcion="El trabajo acumulado del proyecto muestra el impacto que ha tenido en la salud y bienestar de miles de personas."
-                    enlace="#inicio-blog"
                 />
 
                 <PostCard
@@ -80,7 +72,6 @@ const Blog = () => {
                     tag="Nueva iniciativa"
                     titulo="Proyecto de nutrición infantil busca mejorar la calidad de vida de niños"
                     descripcion="La iniciativa está orientada a evaluación, seguimiento, educación alimentaria y entrega de apoyo nutricional."
-                    enlace="#inicio-blog"
                 />
 
                 <PostCard
@@ -89,7 +80,6 @@ const Blog = () => {
                     tag="Contexto del proyecto"
                     titulo="Llevar salud a comunidades rurales sigue siendo una necesidad urgente"
                     descripcion="El proyecto nació para responder a una realidad concreta en municipios del sur de Francisco Morazán."
-                    enlace="#inicio-blog"
                 />
 
             </div>

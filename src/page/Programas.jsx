@@ -18,7 +18,7 @@ const Programas = () => {
                 desc="Estas son las áreas principales mediante las cuales el proyecto brinda apoyo y servicios a la comunidad."
             />
 
-            <div className="max-w-[1180px] mx-auto w-[90%] flex flex-col gap-6">
+            <div className="max-w-6xl mx-auto w-11/12 flex flex-col gap-6">
 
                 <CardHorizontal
                     imagen="https://picsum.photos/400/300"

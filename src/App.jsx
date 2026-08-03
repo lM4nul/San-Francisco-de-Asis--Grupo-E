@@ -9,7 +9,7 @@ function App() {
     <>
 
 
-      <header className="sticky top-0 z-50 bg-neutral-50">
+      <header className="sticky top-0 z-50 bg-neutral-50 mb-3">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-4 p-3">
           <img src="https://picsum.photos/50/50" alt="Logo" className="rounded-full" />
           <p className="cursor-default "> <p className="text-xl">Proyecto San Francisco de Asís</p> <p className="text-sm">Salud y servicio para la comunidad</p> </p>
@@ -23,12 +23,9 @@ function App() {
         <Outlet /> {/*Aqui se maneja toda la logica del rout OJO no borrar / info sacada de la documentacion*/}
 
 
-
-        
-
       </main>
 
-      <footer className="bg-neutral-900 text-white">
+      <footer className="bg-neutral-900 text-white mt-5">
         <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold text-orange-400  mb-3">Ubicación</h3>
