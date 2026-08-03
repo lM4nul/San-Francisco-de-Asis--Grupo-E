@@ -10,7 +10,7 @@ const Blog = () => {
 
                 <HeroPanel
                     evento="Noticias, artículos y avances"
-                    imagen="/img/blog/bannerblog.webp"
+                    imagen="img/bannerblog.webp"
                     titulo="Blog del Proyecto"
                     descripcion="En este espacio compartimos acontecimientos importantes, información sobre nuestros servicios y nuevas iniciativas orientadas al bienestar comunitario."
                 />
@@ -22,7 +22,7 @@ const Blog = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-lg border border-neutral-200">
 
                     <img
-                        src="/img/blog/noticia-1.webp"
+                        src="img/noticia-1.webp"
                         alt="Laboratorio Santa María"
                         className="w-full h-full min-h-88 object-cover"
                     />
@@ -59,7 +59,7 @@ const Blog = () => {
             <div className="max-w-6xl mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <PostCard
-                    imgUrl="/img/blog/programa-clinica.webp"
+                    imgUrl="img/programa-clinica.webp"
                     altText="Atención médica a la comunidad"
                     tag="Artículo institucional"
                     titulo="Más de 55,000 atenciones médicas que reflejan compromiso social"
@@ -67,7 +67,7 @@ const Blog = () => {
                 />
 
                 <PostCard
-                    imgUrl="/img/blog/nutri.webp"
+                    imgUrl="img/nutri.webp"
                     altText="Proyecto de nutrición infantil"
                     tag="Nueva iniciativa"
                     titulo="Proyecto de nutrición infantil busca mejorar la calidad de vida de niños"
@@ -75,7 +75,7 @@ const Blog = () => {
                 />
 
                 <PostCard
-                    imgUrl="/img/blog/compro.webp"
+                    imgUrl="img/compro.webp"
                     altText="Atención de salud en comunidades rurales"
                     tag="Contexto del proyecto"
                     titulo="Llevar salud a comunidades rurales sigue siendo una necesidad urgente"

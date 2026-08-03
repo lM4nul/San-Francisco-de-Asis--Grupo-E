@@ -3,15 +3,15 @@ import { useState, useEffect } from "react";
 function Galeria() {
   // Array de imágenes del carrusel 
   const slides = [  
-    "/img/galeria/img1.webp",  
-    "/img/galeria/img2.webp",
-    "/img/galeria/img3.webp",
-    "/img/galeria/img4.webp",
-    "/img/galeria/img5.webp",
-    "/img/galeria/img7.webp",
-    "/img/galeria/img8.webp",
-    "/img/galeria/programa-clinica.webp",
-    "/img/galeria/nutri.webp"
+    "img/img1.webp",  
+    "img/img2.webp",
+    "img/img3.webp",
+    "img/img4.webp",
+    "img/img5.webp",
+    "img/img7.webp",
+    "img/img8.webp",
+    "img/programa-clinica.webp",
+    "img/nutri.webp"
   ];
 
   // Estado para controlar la imagen actual
@@ -40,13 +40,13 @@ function Galeria() {
       <h1 className="text-xl font-bold mb-4">Galería de Fotos</h1>
       <h1 className="text-xl mb-4">Imágenes del trabajo, la atención y los espacios del Proyecto San Francisco de Asís.</h1>
 
-      <div className="relative w-full max-w-5xl mx-auto h-120 overflow-hidden rounded-lg shadow-md">
+      <div className="relative w-full max-w-5xl mx-auto h-120 overflow-hidden rounded-lg shadow-md bg-neutral-200">
         {slides.map((slide, index) => (
           <img
             key={index}
             src={slide}
             alt={`Slide ${index}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
               current === index ? "opacity-100" : "opacity-0"
             }`}
           />

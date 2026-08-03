@@ -8,7 +8,7 @@ const Programas = () => {
         <>
             <HeroPanel
                 evento="Brigadas, jornadas y actividades"
-                imagen="/img/programas/programas-banner.webp"
+                imagen="img/programas-banner.webp"
                 titulo="Nuestros Programas"
                 descripcion="Trabajamos para acercar atención en salud a las comunidades que más lo necesitan, por medio de servicios médicos, laboratorio clínico y apoyo farmacéutico."
             />
@@ -21,7 +21,7 @@ const Programas = () => {
             <div className="max-w-6xl mx-auto w-11/12 flex flex-col gap-6">
 
                 <CardHorizontal
-                    imagen="/img/programas/programa-clinica.webp"
+                    imagen="img/programa-clinica.webp"
                     tag="Atención médica"
                     titulo="Clínica Santa María"
                     descripcion="Área orientada a la consulta médica general, atención externa y apoyo a pacientes que requieren valoración y seguimiento de salud."
@@ -29,7 +29,7 @@ const Programas = () => {
                 />
 
                 <CardHorizontal
-                    imagen="/img/programas/equipo-4.webp"
+                    imagen="img/equipo-4.webp"
                     tag="Diagnóstico clínico"
                     titulo="Laboratorio Santa María"
                     descripcion="Brinda apoyo por medio de análisis clínicos que permiten fortalecer el diagnóstico, control y seguimiento de los pacientes atendidos."
@@ -38,7 +38,7 @@ const Programas = () => {
                 />
 
                 <CardHorizontal
-                    imagen="/img/programas/programa-farmacia.webp"
+                    imagen="img/programa-farmacia.webp"
                     tag="Apoyo farmacéutico"
                     titulo="Farmacia San Francisco de Asís"
                     descripcion="Facilita la dispensación de medicamentos para apoyar el tratamiento de las personas que reciben atención en el proyecto."
@@ -46,7 +46,7 @@ const Programas = () => {
                 />
 
                 <CardHorizontal
-                    imagen="/img/programas/programa-candelaria.webp"
+                    imagen="img/programa-candelaria.webp"
                     tag="Servicio complementario"
                     titulo="Farmacia Candelaria"
                     descripcion="Fortalece el trabajo del proyecto al ampliar la capacidad de apoyo farmacéutico y atención orientada al bienestar comunitario."
@@ -73,7 +73,7 @@ const Programas = () => {
                 titulo="Programas pensados para responder a necesidades reales"
                 descripcion="Cada área del proyecto trabaja con un mismo propósito: acercar servicios de salud dignos, accesibles y humanos a personas que muchas veces no cuentan con los recursos necesarios para recibir atención.
 De esta forma, el proyecto busca no solo atender enfermedades, sino también acompañar a la población, orientar a las familias y fortalecer el bienestar comunitario."
-                imagen="/img/programas/programas-comunidad.webp" />
+                imagen="img/programas-comunidad.webp" />
 
         </>
 

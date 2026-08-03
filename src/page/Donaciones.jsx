@@ -43,7 +43,7 @@ const Donaciones = () => {
 
             <HeroPanel
                 evento="Tu ayuda puede transformar vidas"
-                imagen="/img/donaciones/donacion.webp"
+                imagen="img/donacion.webp"
                 titulo="Donaciones"
                 descripcion="Cada aporte ayuda a fortalecer la atención médica, los estudios clínicos, el acceso a medicamentos y el acompañamiento a familias que más lo necesitan."
             />
