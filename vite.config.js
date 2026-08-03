@@ -2,8 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+const base = process.env.DEPLOY_BASE_URL ?? '/'
+const withSlash = base === '/' || base.endsWith('/') ? base : base + '/'
+
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.DEPLOY_BASE_URL ?? '/' ,
+  base: withSlash,
   plugins: [react(),tailwindcss(),],
 })
