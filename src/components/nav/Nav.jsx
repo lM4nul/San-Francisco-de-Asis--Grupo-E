@@ -8,12 +8,12 @@ const Nav = (
 
     return (
 
-        <nav className="relative w-full lg:w-auto flex justify-between lg:justify-start items-center ">
+        <nav className="relative w-full lg:w-auto flex justify-between lg:justify-start items-center">
 
-            <button className="lg:hidden text-2xl cursor-pointer text-base bg-cyan-500 p-1 px-4 rounded-full"
+            <button className="lg:hidden text-2xl cursor-pointer"
                 onClick={() => setMenuAbierto(!menuAbierto)} >
 
-                {menuAbierto ? "Cerrar" : "Menú"}
+                {menuAbierto ? <button className="text-base bg-cyan-500 p-1 px-4 rounded-full">Cerrar</button> : <button className="text-base bg-cyan-500 p-1 px-4 rounded-full">Menú</button>}
 
             </button>
 
