@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const NavLinks=(
     {
@@ -11,9 +11,12 @@ const NavLinks=(
     return(
 
         <li>
-            <Link to={href} onClick={onClick} className={["hover:text-black","cursor-pointer",...classNames].join(' ')}>
+            <NavLink to={href} onClick={onClick}
+                className={({ isActive }) =>
+                    ["cursor-pointer", isActive ? "text-orange-500 font-bold" : "hover:text-black", ...classNames].join(' ')
+                }>
                 {text}
-            </Link>
+            </NavLink>
         </li>
         
     );
