@@ -6,7 +6,7 @@ import  SubTitle  from '../components/titles/subt'
 const Blog = () => {
     return (
         <>
-            <div id="inicio-blog">
+            <div>
 
                 <HeroPanel
                     evento="Noticias, artículos y avances"
@@ -45,13 +45,6 @@ const Blog = () => {
                             por el proyecto.
                         </p>
 
-                        <a
-                            href="#inicio-blog"
-                            className="text-orange-500 font-bold"
-                        >
-                            Leer artículo completo
-                        </a>
-
                     </div>
 
                 </div>
@@ -71,7 +64,6 @@ const Blog = () => {
                     tag="Artículo institucional"
                     titulo="Más de 55,000 atenciones médicas que reflejan compromiso social"
                     descripcion="El trabajo acumulado del proyecto muestra el impacto que ha tenido en la salud y bienestar de miles de personas."
-                    enlace="#inicio-blog"
                 />
 
                 <PostCard
@@ -80,7 +72,6 @@ const Blog = () => {
                     tag="Nueva iniciativa"
                     titulo="Proyecto de nutrición infantil busca mejorar la calidad de vida de niños"
                     descripcion="La iniciativa está orientada a evaluación, seguimiento, educación alimentaria y entrega de apoyo nutricional."
-                    enlace="#inicio-blog"
                 />
 
                 <PostCard
@@ -89,7 +80,6 @@ const Blog = () => {
                     tag="Contexto del proyecto"
                     titulo="Llevar salud a comunidades rurales sigue siendo una necesidad urgente"
                     descripcion="El proyecto nació para responder a una realidad concreta en municipios del sur de Francisco Morazán."
-                    enlace="#inicio-blog"
                 />
 
             </div>
